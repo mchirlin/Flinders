@@ -7,6 +7,7 @@
 |click on link  |+Add Additional Account Number                |
 |populate grid  |[1]|column|Natural Account |row|[1]|with|1801 |
 |populate grid  |[1]|column|Account Fraction|row|[1]|with|20   |
+|wait for       |1  |second                                    |
 |populate grid  |[1]|column|Entity          |row|[2]|with|01   |
 |populate grid  |[1]|column|Cost Centre     |row|[2]|with|084  |
 |populate grid  |[1]|column|Project         |row|[2]|with|01913|
