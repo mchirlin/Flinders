@@ -1,4 +1,4 @@
-|scenario       |populate justification details                         |
-|populate field |Supervisor's justification for the Employment Variation|
-|click on button|Submit                                                 |
-|click on button|Yes                                                    |
+|scenario       |populate justification details                                                |
+|populate field |Supervisor's justification for the Employment Variation|with|time for a change|
+|click on button|Submit                                                                        |
+|click on button|Yes                                                                           |

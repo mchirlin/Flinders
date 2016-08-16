@@ -3,15 +3,13 @@
 |login with username     |${requester}                                |
 |click on menu           |Actions                                     |
 |click on action         |Request Employment Variation                |
-|click on checkbox option|Higher Duties                               |
-|click on checkbox option|Fraction Change                             |
+|click on checkbox option|Employment Fraction                         |
 |click on checkbox option|Account Number Change                       |
 |click on checkbox option|Supervisor Change                           |
 |populate field          |Please Enter FAN    |with    |${staff}      |
 |populate field          |From                |with    |01/01/2016    |
 |populate field          |To                  |with    |01/02/2016    |
 |click on button         |Next                                        |
-|populate higher duties details                                       |
 |populate full time details                                           |
 |populate account details                                             |
 |populate supervisor details                                          |

@@ -3,7 +3,7 @@
 |login with username     |${requester}                            |
 |click on menu           |Actions                                 |
 |click on action         |Request Employment Variation            |
-|click on checkbox option|Fraction Change                         |
+|click on checkbox option|Employment Fraction                     |
 |click on checkbox option|Supervisor Change                       |
 |populate field          |Please Enter FAN   |with   |${staff}    |
 |populate field          |From               |with   |01/01/2016  |
