@@ -1,3 +1,10 @@
 '''Login to Tempo and submit Endorser approval'''
-|scenario   |endorser approval                                           |
-|approval by|${endorser}|for|${staffname}|with comments|Endorser approval|
+|scenario           |endorser approval                         |
+|login with username|${endorser}                               |
+|click on menu      |Tasks                                     |
+|click on task      |Employment Variation for ${staffname}     |
+|populate field     |Provide information|with|Endorser approval|
+|click on button    |Endorse                                   |
+|click on button    |Yes                                       |
+|wait for           |${sleep}                                  |
+|logout                                                        |

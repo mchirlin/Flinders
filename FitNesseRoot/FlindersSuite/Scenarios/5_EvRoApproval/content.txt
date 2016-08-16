@@ -1,3 +1,12 @@
 '''Login to Tempo and submit RO approval'''
-|scenario   |ro approval                                         |
-|approval by|${approver}|for|${staffname}|with comments|I approve|
+|scenario           |ro approval                          |
+|login with username|${approver}                          |
+|click on menu      |Tasks                                |
+|click on task      |Employment Variation for ${staffname}|
+|click on button    |Accept                               |
+|wait for           |+5 seconds                           |
+|populate field     |Comment     |with     |I approve     |
+|click on button    |Accept                               |
+|click on button    |Yes                                  |
+|wait for           |${sleep}                             |
+|logout                                                   |
