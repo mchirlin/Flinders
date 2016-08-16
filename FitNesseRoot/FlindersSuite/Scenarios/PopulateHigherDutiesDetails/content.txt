@@ -1,4 +1,4 @@
-|scenario                                                                                                                             |populate higher duties details
+|scenario       |populate higher duties details                                                                                       |
 |populate field |Reason for Higher Duties                                                       |with|Temporarily replacing supervisor|
 |populate field |During the Higher Duties will                                                  |with|No                              |
 |populate field |Enter FAN of the person who will be undertaking the Supervisor responsibilities|with|${supervisor}                   |

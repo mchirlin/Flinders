@@ -1,0 +1,9 @@
+|script                                          |
+|hda fraction part time account supervisor change|
+|new supervisor approval                         |
+|ro review                                       |
+|endorser approval                               |
+|ro approval                                     |
+|staff approval                                  |
+|hrcs approval                                   |
+|payroll approval                                |

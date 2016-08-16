@@ -1,4 +1,4 @@
-|scenario                                                      |populate
+|scenario       |populate account details                      |
 |populate grid  |[1]|column|Entity          |row|[1]|with|01   |
 |populate grid  |[1]|column|Cost Centre     |row|[1]|with|084  |
 |populate grid  |[1]|column|Project         |row|[1]|with|01913|
