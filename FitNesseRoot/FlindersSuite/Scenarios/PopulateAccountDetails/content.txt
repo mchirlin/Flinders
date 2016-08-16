@@ -5,6 +5,7 @@
 |populate grid  |[1]|column|Natural Account |row|[1]|with|1202 |
 |populate grid  |[1]|column|Account Fraction|row|[1]|with|100  |
 |click on link  |+Add Additional Account Number                |
+|wait for       |1  |seconds                                   |
 |populate grid  |[1]|column|Natural Account |row|[1]|with|1801 |
 |wait for       |1  |seconds                                   |
 |populate grid  |[1]|column|Account Fraction|row|[1]|with|20   |
