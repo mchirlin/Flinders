@@ -1,11 +1,11 @@
 !*** Initialization
-!| script                       |com.appiancorp.ps.automatedtest.fixture.TempoFixture|
-|set appian url to              |https://flinderstest.appiancloud.com/suite          |
-|set appian version to          |16.2                                                |
-|set appian locale to           |en_US                                               |
-|set timeout seconds to         |20                                                  |
-|set stop on error to           |true                                                |
-|set screenshot path to         |${automated.testing.home}/screenshots/              |
-|set take screenshot on error to|true                                                |
+!| script                     |com.appiancorp.ps.automatedtest.fixture.TempoFixture|
+|set appian url to            |https://flinderstest.appiancloud.com/suite          |
+|set appian version to        |16.2                                                |
+|set appian locale to         |en_US                                               |
+|set timeout seconds to       |20                                                  |
+|set stop on error to         |true                                                |
+|set screenshot path to       |${automated.testing.home}/screenshots/              |
+|set take error screenshots to|true                                                |
 ***!
 
