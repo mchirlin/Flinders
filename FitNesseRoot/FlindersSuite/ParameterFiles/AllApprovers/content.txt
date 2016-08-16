@@ -1,0 +1,11 @@
+!define requester {colo0007}
+!define supervisor {repp0001}
+!define RO {venn0055}
+!define endorser {boci0002}
+!define approver {menz0024}
+!define staff {voye0001}
+!define staffname {Julie Voyer}
+!define HRCS {hedd0001}
+!define payroll {tsch0005}
+!define environment {https://flinderstest.appiancloud.com/suite}
+!define sleep {+25 seconds}

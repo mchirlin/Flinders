@@ -1,0 +1,50 @@
+!2 '''Account Number and supervisor change'''
+!define TEST_RUNNER {fitlibrary.suite.FitLibraryServer}
+----
+'''Class Path'''
+
+!path C:\AutomatedTesting\**.jar
+${parameterfile}
+----
+!| com.appiancorp.ps.automatedtest.fixture.AppianFitnesseProcessTempoFixture |
+
+'''Set up Appian test'''
+| setup selenium web driver with browser | FIREFOX |
+| set appian url to | ${environment} |
+| set timeout seconds to | 60 |
+
+'''Login to Tempo and submit new Employment variation'''
+| login with username | ${requester} | and password | ${password} |
+| click on menu | Actions |
+| click on action | Request Employment Variation |
+| click on checkbox option | Account Number Change |
+| wait for | +1 seconds |
+| click on checkbox option | Supervisor Change |
+| populate field | Please Enter FAN | with | ${staff} |
+| populate field | From | with | 01/01/2016 |
+| populate field | To | with | 01/02/2016 |
+| click on button | Next |
+| populate grid | [1] | column | Entity | row | [1] | with | 01 |
+| populate grid | [1] | column | Cost Centre | row | [1] | with | 084 |
+| populate grid | [1] | column | Project | row | [1] | with | 01913 |
+| populate grid | [1] | column | Natural Account | row | [1] | with | 1202 |
+| populate grid | [1] | column | Account Fraction | row | [1] | with | 100 |
+| click on link | +Add Additional Account Number |
+| populate grid | [1] | column | Natural Account | row | [1] | with | 1801 |
+| populate grid | [1] | column | Account Fraction | row | [1] | with | 20 |
+| populate grid | [1] | column | Entity | row | [2] | with | 01 |
+| populate grid | [1] | column | Cost Centre | row | [2] | with | 084 |
+| populate grid | [1] | column | Project | row | [2] | with | 01913 |
+| populate grid | [1] | column | Natural Account | row | [2] | with | 1202 |
+| populate grid | [1] | column | Account Fraction | row | [2] | with | 80 |
+| click on button | Next |
+| populate field | Please select new Superviso | with | ${supervisor} |
+| wait for | +1 seconds |
+| click on button | Next |
+| populate field | Please provide a reason/justification for the change | with | change is good |
+| click on button | Submit |
+| click on button | Yes |
+| wait for | ${sleep} |
+| logout |
+
+

@@ -1,0 +1,28 @@
+'''URL for parameter files'''
+add the following text to the end of the URL to specify which parameter file to use
+
+	'''All approvers are unique - ITS users'''
+	?responder=suite&parameterfile=!include .EVParameterFiles.itsparameterfile
+
+	'''Approver is the new supervisor'''
+	?responder=suite&parameterfile=!include .EVParameterFiles.itsappisnewsuper
+
+	'''Endorser is the staff member'''
+	?responder=suite&parameterfile=!include .EVParameterFiles.itsendorserisstaff
+
+	'''All approvers are unique - Library users'''
+	?responder=suite&parameterfile=!include .EVParameterFiles.Libraryparameterfile
+
+
+	''' so the URL becomes: '''
+
+	http:://localhost:8980/EVsuites?responder=suite&parameterfile=!include .EVParameterFiles.itsparameterfile
+	http:://localhost:8980/EVsuites?responder=suite&iparameterfile=!include .EVParameterFiles.libraryparameterfile
+    
+!***> FitNesse Configurations
+!define TEST_SYSTEM {slim}
+!define COMMAND_PATTERN {java -Dlog4j.configuration=file:///${automated.testing.home}/log4j.properties -cp %p %m}
+!path ${automated.testing.home}/**.jar
+***!
+
+!contents -R2 -g -p -f -h

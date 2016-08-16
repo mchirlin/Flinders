@@ -1,0 +1,13 @@
+!contents -R2 -g -p -f -h
+!define requester {mahe0061}
+!define supervisor {fish0203}
+!define RO {john0515}
+!define endorser {mcca0407}
+!define approver {fish0203}
+!define staff {swee0068}
+!define staffname {John Sweeney}
+!define HRCS {hedd0001}
+!define payroll {test0155}
+!define environment {https://flinderstest.appiancloud.com/suite}
+!define sleep {+25 seconds}
+

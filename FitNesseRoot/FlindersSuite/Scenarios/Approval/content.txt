@@ -1,0 +1,10 @@
+'''Login to Tempo and submit new supervisor approval'''
+|scenario           |approval by _ for _ with comments|username,staff,comments|
+|login with username|@username                                                |
+|click on menu      |Tasks                                                    |
+|click on task      |Employment Variation for @staff                          |
+|populate field     |Comment                          |with     |@comments    |
+|click on button    |Accept                                                   |
+|click on button    |Yes                                                      |
+|wait for           |${sleep}                                                 |
+|logout                                                                       |

@@ -1,0 +1,24 @@
+!2 '''Endorser Approval'''
+!define TEST_RUNNER {fitlibrary.suite.FitLibraryServer}
+----
+'''Class Path'''
+
+!path C:\AutomatedTesting\**.jar
+${parameterfile}
+----
+!| com.appiancorp.ps.automatedtest.fixture.AppianFitnesseProcessTempoFixture |
+
+'''Set up Appian test'''
+''| setup selenium web driver with browser | FIREFOX |''
+| set appian url to | ${environment} |
+| set timeout seconds to | 60 |
+
+'''Login to Tempo and submit Endorser approval'''
+| login with username |  ${endorser} | and  | ${endorser} |
+| click on menu | Tasks |
+| click on task | Employment Variation for ${staffname} |
+| populate field | Provide information to assist | with | Endorser approval |
+| click on button | Endorse |
+| click on button | Yes |
+| wait for | ${sleep} |
+| logout |

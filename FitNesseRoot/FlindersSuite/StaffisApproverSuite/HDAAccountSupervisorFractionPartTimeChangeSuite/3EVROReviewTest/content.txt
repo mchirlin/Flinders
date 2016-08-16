@@ -1,0 +1,27 @@
+!2 '''RO Approval'''
+!define TEST_RUNNER {fitlibrary.suite.FitLibraryServer}
+----
+'''Class Path'''
+
+!path C:\AutomatedTesting\**.jar
+${parameterfile}
+----
+!| com.appiancorp.ps.automatedtest.fixture.AppianFitnesseProcessTempoFixture |
+
+'''Set up Appian test'''
+''| setup selenium web driver with browser | FIREFOX |''
+| set appian url to | ${environment} |
+| set timeout seconds to | 60 |
+
+
+'''Login to Tempo and submit RO approval'''
+| login with username |  ${RO} | and password | ${ROpassword} |
+| click on menu | Tasks |
+| click on task | Employment Variation for ${staffname} |
+| click on button | Accept |
+| wait for | +5 seconds |
+| populate field | Provide information to assist | with | RO approval |
+| click on button | Submit |
+| click on button | Yes |
+| wait for | ${sleep} |
+| logout |

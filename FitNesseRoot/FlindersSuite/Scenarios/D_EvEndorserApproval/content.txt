@@ -1,0 +1,3 @@
+'''Login to Tempo and submit Endorser approval'''
+|scenario   |endorser approval                                           |
+|approval by|${endorser}|for|${staffname}|with comments|Endorser approval|

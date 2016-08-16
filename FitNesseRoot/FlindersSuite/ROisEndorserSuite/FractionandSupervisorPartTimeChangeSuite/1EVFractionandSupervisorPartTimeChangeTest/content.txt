@@ -1,0 +1,48 @@
+!2 '''New fraction and supervisor change for a part time change'''
+!define TEST_RUNNER {fitlibrary.suite.FitLibraryServer}
+----
+'''Class Path'''
+
+!path C:\AutomatedTesting\**.jar
+${parameterfile}
+----
+!| com.appiancorp.ps.automatedtest.fixture.AppianFitnesseProcessTempoFixture |
+
+'''Set up Appian test'''
+| setup selenium web driver with browser | FIREFOX |
+| set appian url to | ${environment} |
+| set timeout seconds to | 60 |
+
+'''Login to Tempo and submit new Employment variation'''
+| login with username | ${requester} | and password | ${password} |
+| click on menu | Actions |
+| click on action | Request Employment Variation |
+| click on checkbox option | Fraction Change |
+| wait for | +1 seconds |
+| click on checkbox option | Supervisor Change |
+| populate field | Please Enter FAN | with | ${staff} |
+| populate field | From | with | 01/01/2016 |
+| populate field | To | with | 01/02/2016 |
+| click on button | Next |
+| populate field | New Fraction | with | Part Time|
+| populate grid | [1] | column | Mon | row | [1] | with | 7:21 |
+| populate grid | [1] | column | Tue | row | [1] | with | 5:00 |
+| populate grid | [1] | column | Wed | row | [1] | with | 7:21 |
+| populate grid | [1] | column | Thu | row | [1] | with | 5:00 |
+| populate grid | [1] | column | Fri | row | [1] | with | 7:21 |
+| populate grid | [1] | column | Mon | row | [2] | with | 5:00 |
+| populate grid | [1] | column | Tue | row | [2] | with | 7:21 |
+| populate grid | [1] | column | Wed | row | [2] | with | 7:21 |
+| populate grid | [1] | column | Thu | row | [2] | with | 5:00 |
+| populate grid | [1] | column | Fri | row | [2] | with | 5:00 |
+| click on button | Next |
+| populate field | Please select new Supervisor | with | ${supervisor} |
+| wait for | +1 seconds |
+| click on button | Next |
+| populate field | Please provide a reason/justification for the change | with | change is good |
+| click on button | Submit |
+| click on button | Yes |
+| wait for | ${sleep} |
+| logout |
+
+

@@ -1,0 +1,2 @@
+|script                    |
+|setup with browser|FIREFOX|
