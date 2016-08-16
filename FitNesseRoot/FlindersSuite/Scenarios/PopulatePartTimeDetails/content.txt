@@ -1,0 +1,13 @@
+|scenario       |populate part time details               |
+|populate field |New Fraction|with  |Part Time            |
+|populate grid  |[1]         |column|Mon|row|[1]|with|7:21|
+|populate grid  |[1]         |column|Tue|row|[1]|with|5:00|
+|populate grid  |[1]         |column|Wed|row|[1]|with|7:21|
+|populate grid  |[1]         |column|Thu|row|[1]|with|5:00|
+|populate grid  |[1]         |column|Fri|row|[1]|with|7:21|
+|populate grid  |[1]         |column|Mon|row|[2]|with|5:00|
+|populate grid  |[1]         |column|Tue|row|[2]|with|7:21|
+|populate grid  |[1]         |column|Wed|row|[2]|with|7:21|
+|populate grid  |[1]         |column|Thu|row|[2]|with|5:00|
+|populate grid  |[1]         |column|Fri|row|[2]|with|5:00|
+|click on button|Next                                     |

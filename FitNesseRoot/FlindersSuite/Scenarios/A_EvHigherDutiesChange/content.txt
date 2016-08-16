@@ -1,23 +1,15 @@
 '''Login to Tempo and submit new Employment variation'''
-|scenario                |higher duties change                                                                                                 |
-|login with username     |${requester}                                                                                                         |
-|click on menu           |Actions                                                                                                              |
-|click on action         |Request Employment Variation                                                                                         |
-|click on checkbox option|Higher Duties                                                                                                        |
-|populate field          |Please Enter FAN                                                               |with|${staff}                        |
-|populate field          |From                                                                           |with|01/01/2016                      |
-|populate field          |To                                                                             |with|01/02/2016                      |
-|click on button         |Next                                                                                                                 |
-|populate field          |Reason for Higher Duties                                                       |with|Temporarily replacing supervisor|
-|populate field          |During the Higher Duties will                                                  |with|No                              |
-|populate field          |Enter FAN of the person who will be undertaking the Supervisor responsibilities|with|${supervisor}                   |
-|populate field          |Will current supervisory responsibilities                                      |with|Yes                             |
-|populate field          |Percentage of Higher Duties being performed                                    |with|20                              |
-|populate field          |Classification to be paid during Higher Duties                                 |with|HEO5 (STEP 1)                   |
-|click on button         |Next                                                                                                                 |
-|populate field          |Please provide a reason/justification for the change                           |with|needs extra stuff to do         |
-|click on button         |Submit                                                                                                               |
-|click on button         |Yes                                                                                                                  |
-|wait for                |${sleep}                                                                                                             |
-|logout                                                                                                                                        |
+|scenario                |higher duties change            |
+|login with username     |${requester}                    |
+|click on menu           |Actions                         |
+|click on action         |Request Employment Variation    |
+|click on checkbox option|Higher Duties                   |
+|populate field          |Please Enter FAN|with|${staff}  |
+|populate field          |From            |with|01/01/2016|
+|populate field          |To              |with|01/02/2016|
+|click on button         |Next                            |
+|populate higher duties details                           |
+|populate justification details                           |
+|wait for                |${sleep}                        |
+|logout                                                   |
 

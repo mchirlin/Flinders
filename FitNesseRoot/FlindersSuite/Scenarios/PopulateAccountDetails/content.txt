@@ -1,0 +1,15 @@
+|scenario                                                      |populate
+|populate grid  |[1]|column|Entity          |row|[1]|with|01   |
+|populate grid  |[1]|column|Cost Centre     |row|[1]|with|084  |
+|populate grid  |[1]|column|Project         |row|[1]|with|01913|
+|populate grid  |[1]|column|Natural Account |row|[1]|with|1202 |
+|populate grid  |[1]|column|Account Fraction|row|[1]|with|100  |
+|click on link  |+Add Additional Account Number                |
+|populate grid  |[1]|column|Natural Account |row|[1]|with|1801 |
+|populate grid  |[1]|column|Account Fraction|row|[1]|with|20   |
+|populate grid  |[1]|column|Entity          |row|[2]|with|01   |
+|populate grid  |[1]|column|Cost Centre     |row|[2]|with|084  |
+|populate grid  |[1]|column|Project         |row|[2]|with|01913|
+|populate grid  |[1]|column|Natural Account |row|[2]|with|1202 |
+|populate grid  |[1]|column|Account Fraction|row|[2]|with|80   |
+|click on button|Next                                          |

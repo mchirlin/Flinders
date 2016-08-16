@@ -12,7 +12,6 @@
 !include -c .FlindersSuite.Scenarios.A_EvHigherDutiesChange
 !include -c .FlindersSuite.Scenarios.A_EvOtherChange
 !include -c .FlindersSuite.Scenarios.A_EvSupervisorChange
-!include -c .FlindersSuite.Scenarios.Approval
 !include -c .FlindersSuite.Scenarios.B_EvNewSupervisorApproval
 !include -c .FlindersSuite.Scenarios.C_EvRoReview
 !include -c .FlindersSuite.Scenarios.D_EvEndorserApproval
@@ -20,3 +19,10 @@
 !include -c .FlindersSuite.Scenarios.F_EvStaffApproval
 !include -c .FlindersSuite.Scenarios.G_EvHrcsApproval
 !include -c .FlindersSuite.Scenarios.H_EvPayrollApproval
+!include -c .FlindersSuite.Scenarios.PopulateAccountDetails
+!include -c .FlindersSuite.Scenarios.PopulateFullTimeDetails
+!include -c .FlindersSuite.Scenarios.PopulatePartTimeDetails
+!include -c .FlindersSuite.Scenarios.PopulateJustificationDetails
+!include -c .FlindersSuite.Scenarios.PopulateSupervisorDetails
+!include -c .FlindersSuite.Scenarios.PopulateHigherDutiesDetails
+!include -c .FlindersSuite.Scenarios.Approval

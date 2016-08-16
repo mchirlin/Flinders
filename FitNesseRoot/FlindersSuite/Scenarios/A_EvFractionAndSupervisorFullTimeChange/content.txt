@@ -1,24 +1,18 @@
 '''Login to Tempo and submit new Employment variation'''
-|scenario                |fraction and supervisor full time change                                |
-|login with username     |${requester}                                                            |
-|click on menu           |Actions                                                                 |
-|click on action         |Request Employment Variation                                            |
-|click on checkbox option|Fraction Change                                                         |
-|wait for                |+1 seconds                                                              |
-|click on checkbox option|Supervisor Change                                                       |
-|populate field          |Please Enter FAN                                    |with|${staff}      |
-|populate field          |From                                                |with|01/01/2016    |
-|populate field          |To                                                  |with|01/02/2016    |
-|click on button         |Next                                                                    |
-|populate field          |New Fraction                                        |with|Full Time     |
-|click on button         |Next                                                                    |
-|populate field          |Please select new Supervisor                        |with|${supervisor} |
-|wait for                |+1 seconds                                                              |
-|click on button         |Next                                                                    |
-|populate field          |Please provide a reason/justification for the change|with|change is good|
-|click on button         |Submit                                                                  |
-|click on button         |Yes                                                                     |
-|wait for                |${sleep}                                                                |
-|logout                                                                                           |
+|scenario                |fraction and supervisor full time change|
+|login with username     |${requester}                            |
+|click on menu           |Actions                                 |
+|click on action         |Request Employment Variation            |
+|click on checkbox option|Fraction Change                         |
+|click on checkbox option|Supervisor Change                       |
+|populate field          |Please Enter FAN   |with   |${staff}    |
+|populate field          |From               |with   |01/01/2016  |
+|populate field          |To                 |with   |01/02/2016  |
+|click on button         |Next                                    |
+|populate full time details                                       |
+|populate supervisor details                                      |
+|populate justification details                                   |
+|wait for                |${sleep}                                |
+|logout                                                           |
 
 

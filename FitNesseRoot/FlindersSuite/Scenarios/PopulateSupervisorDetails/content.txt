@@ -1,0 +1,3 @@
+|scenario       |populate supervisor details                    |
+|populate field |Please select new Supervisor|with|${supervisor}|
+|click on button|Next                                           |

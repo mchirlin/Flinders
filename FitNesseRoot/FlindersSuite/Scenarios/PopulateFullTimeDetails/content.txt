@@ -1,0 +1,3 @@
+|scenario       |populate full time details |
+|populate field |New Fraction|with|Full Time|
+|click on button|Next                       |
