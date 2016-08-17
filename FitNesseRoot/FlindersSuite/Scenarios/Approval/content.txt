@@ -1,10 +1,22 @@
 '''Login to Tempo and submit new supervisor approval'''
-|scenario           |approval by _ for _ with comments _ and press _|username,staff,comments,button|
-|login with username|@username                                                                     |
-|click on menu      |Tasks                                                                         |
-|click on task      |Employment Variation for @staff                                               |
-|populate field     |Comment                                        |with        |@comments        |
-|click on button    |@button                                                                       |
-|click on button    |Yes                                                                           |
-|wait for           |${sleep}                                                                      |
-|logout                                                                                            |
+|scenario                 |approval by _ for _ with _ press _|username,staff,comments,button|
+|access approval task with|@username                         |for            |@staff        |
+|populate                 |@field                            |with value     |@comments     |
+|submit approval using    |@button                                                          |
+
+|scenario                 |approval accept by _ for _ with _ press _|username,staff,comments,button|
+|access approval task with|@username                                |for            |@staff        |
+|click on button          |Accept                                                                  |
+|populate                 |@field                                   |with value     |@comments     |
+|submit approval using    |@button                                                                 |
+
+|scenario           |access approval task with _ for _|username,staff|
+|login with username|@username                                       |
+|click on menu      |Tasks                                           |
+|click on task      |Employment Variation for @staff                 |
+
+|scenario       |submit approval using _|button|
+|click on button|@button                       |
+|click on button|Yes                           |
+|wait for       |${sleep}                      |
+|logout                                        |
