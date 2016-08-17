@@ -1,3 +1,3 @@
 '''Login to Tempo and submit HRCS approval'''
-|scenario   |hrcs approval                                                         |
-|approval by|${HRCS}|for|${staffname}|with comments|HRCS approval|and press|Approve|
+|scenario   |hrcs approval                                                             |
+|approval by|${HRCS}|for|${staffname}|populate|Comment|with|HRCS approval|press|Approve|
