@@ -1,20 +1,36 @@
-'''Login to Tempo and submit new supervisor approval'''
+!2 Approval scenario used for Individual
 |scenario                 |approval by _ for _ populate _ with _ press _|username,staff,field,comments,button|
 |access approval task with|@username                                    |for               |@staff           |
 |populate field           |@field                                       |with value        |@comments        |
 |submit approval using    |@button                                                                           |
 
+!2 Approval scenario used for Groups
 |scenario                 |approval accept by _ for _ populate _ with _ press _|username,staff,field,comments,button|
 |access approval task with|@username                                           |for               |@staff           |
 |click on button          |Accept                                                                                   |
 |populate field           |@field                                              |with value        |@comments        |
 |submit approval using    |@button                                                                                  |
 
+!2 Approval scenario used for Staff
+|scenario             |approval by _ populate _ with _ press _|username,field,comments,button|
+|access approval task |Accept Employment Variation            |with           |@username     |
+|click on button      |Accept                                                                |
+|populate field       |@field                                 |with value     |@comments     |
+|submit approval using|@button                                                               |
+
+!3 Access Approval Task for Other
 |scenario           |access approval task with _ for _|username,staff|
 |login with username|@username                                       |
 |click on menu      |Tasks                                           |
 |click on task      |Employment Variation for @staff                 |
 
+!3 Access Approval Task for Self
+|scenario           |access approval task _ with _|task,username|
+|login with username|@username                                  |
+|click on menu      |Tasks                                      |
+|click on task      |@task                                      |
+
+!3 Submit Approval Task
 |scenario       |submit approval using _|button|
 |click on button|@button                       |
 |click on button|Yes                           |
