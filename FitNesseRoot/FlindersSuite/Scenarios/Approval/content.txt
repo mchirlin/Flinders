@@ -1,14 +1,14 @@
 '''Login to Tempo and submit new supervisor approval'''
-|scenario                 |approval by _ for _ with _ press _|username,staff,comments,button|
-|access approval task with|@username                         |for            |@staff        |
-|populate                 |@field                            |with value     |@comments     |
-|submit approval using    |@button                                                          |
+|scenario                 |approval by _ for _ populate _ with _ press _|username,staff,field,comments,button|
+|access approval task with|@username                                    |for               |@staff           |
+|populate                 |@field                                       |with value        |@comments        |
+|submit approval using    |@button                                                                           |
 
-|scenario                 |approval accept by _ for _ with _ press _|username,staff,comments,button|
-|access approval task with|@username                                |for            |@staff        |
-|click on button          |Accept                                                                  |
-|populate                 |@field                                   |with value     |@comments     |
-|submit approval using    |@button                                                                 |
+|scenario                 |approval accept by _ for _ populate _ with _ press _|username,staff,field,comments,button|
+|access approval task with|@username                                           |for               |@staff           |
+|click on button          |Accept                                                                                   |
+|populate                 |@field                                              |with value        |@comments        |
+|submit approval using    |@button                                                                                  |
 
 |scenario           |access approval task with _ for _|username,staff|
 |login with username|@username                                       |
