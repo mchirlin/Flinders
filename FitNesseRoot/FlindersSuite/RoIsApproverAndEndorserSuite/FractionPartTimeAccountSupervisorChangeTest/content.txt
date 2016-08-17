@@ -1,5 +1,5 @@
 |script                              |
-|fraction part time supervisor change|
+|fraction part time account supervisor change|
 |new supervisor approval             |
 |finance approval                           |
 |endorser approval                   |

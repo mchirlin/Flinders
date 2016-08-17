@@ -9,7 +9,7 @@
 |populate field          |From             |with |01/01/2016|
 |populate field          |To               |with |01/02/2016|
 |click on button         |Next                              |
-|populate part time detials                                 |
+|populate part time details                                 |
 |populate account details                                   |
 |populate justification details                             |
 |wait for                |${sleep}                          |
