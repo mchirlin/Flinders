@@ -1,6 +1,6 @@
 |script                            |
 |fraction and account number change|
-|ro review                         |
+|finance approval                         |
 |endorser approval                 |
 |ro approval                       |
 |staff approval                    |

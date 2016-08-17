@@ -1,3 +1,3 @@
 '''Login to Tempo and submit Payroll approval'''
-|scenario   |payroll approval                                          |
-|approval by|${payroll}|for|${staffname}|with comments|payroll approval|
+|scenario          |payroll approval                                                                |
+|approval accept by|${payroll}|for|${staffname}|populate|Comment|with|payroll approval|press|Entered|

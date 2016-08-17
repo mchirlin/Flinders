@@ -8,4 +8,4 @@
 !define HRCS {hedd0001}
 !define payroll {tsch0005}
 !define environment {https://flinderstest.appiancloud.com/suite}
-!define sleep {+0 seconds}
+!define sleep {+20 seconds}

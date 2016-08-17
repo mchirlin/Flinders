@@ -1,7 +1,7 @@
 |script                              |
 |fraction part time supervisor change|
 |new supervisor approval             |
-|ro review                           |
+|finance approval                           |
 |endorser approval                   |
 |ro approval                         |
 |staff approval                      |

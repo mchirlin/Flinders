@@ -1,4 +1,4 @@
-!*** Initialization
+!**> Initialization
 !| script                     |com.appiancorp.ps.automatedtest.fixture.TempoFixture|
 |set appian url to            |https://flinderstest.appiancloud.com/suite          |
 |set appian version to        |16.2                                                |

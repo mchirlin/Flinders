@@ -1,0 +1,3 @@
+'''Login to Tempo and submit RO approval'''
+|scenario          |finance approval                                                                                |
+|approval accept by|${RO}|for|${staffname}|populate|Provide information to assist|with|Finance approval|press|Submit|

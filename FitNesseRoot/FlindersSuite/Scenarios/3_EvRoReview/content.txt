@@ -1,3 +1,0 @@
-'''Login to Tempo and submit RO approval'''
-|scenario          |ro review                                                                                  |
-|approval accept by|${RO}|for|${staffname}|populate|Provide information to assist|with|RO approval|press|Submit|

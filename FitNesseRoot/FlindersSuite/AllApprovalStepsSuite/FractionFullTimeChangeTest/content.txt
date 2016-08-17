@@ -1,6 +1,6 @@
 |script                   |
 |fraction full time change|
-|ro review                |
+|finance approval                |
 |endorser approval        |
 |ro approval              |
 |staff approval           |

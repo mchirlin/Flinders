@@ -1,7 +1,7 @@
 |script                                          |
 |hda fraction full time account supervisor change|
 |new supervisor approval                         |
-|ro review                                       |
+|finance approval                                       |
 |endorser approval                               |
 |ro approval                                     |
 |staff approval                                  |

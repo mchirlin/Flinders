@@ -13,7 +13,7 @@
 !include -c .FlindersSuite.Scenarios.1_EvOtherChange
 !include -c .FlindersSuite.Scenarios.1_EvSupervisorChange
 !include -c .FlindersSuite.Scenarios.2_EvNewSupervisorApproval
-!include -c .FlindersSuite.Scenarios.3_EvRoReview
+!include -c .FlindersSuite.Scenarios.3_EvFinanceApproval
 !include -c .FlindersSuite.Scenarios.4_EvEndorserApproval
 !include -c .FlindersSuite.Scenarios.5_EvRoApproval
 !include -c .FlindersSuite.Scenarios.6_EvStaffApproval
