@@ -14,7 +14,6 @@
 !2 Approval scenario used for Staff
 |scenario             |approval by _ populate _ with _ press _|username,field,comments,button|
 |access approval task |Accept Employment Variation            |with           |@username     |
-|click on button      |Accept                                                                |
 |populate field       |@field                                 |with value     |@comments     |
 |submit approval using|@button                                                               |
 
